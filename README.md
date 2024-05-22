@@ -101,6 +101,8 @@ This component has three input pins: __Combine Documents Chain__, __Memory__, an
 
 We will focus on the __Combine Documents Chain__ pin and the __Retriever__ pin, starting with building the __Retriever__ section of the flow, which begins with a __VectorStore Retriever__.
 
+It also has the parameter __Return Source Parameter__, we must set this to __False__ for this tutorial, failing to do so will return a 500 error on deployments.
+
 ### Adding the Vector Store Retriever
 
 ![Add the vector store](images/rag/2_clip.png)
