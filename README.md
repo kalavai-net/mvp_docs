@@ -4,6 +4,10 @@ Welcome to the Kalavai Flow Deployment tutorial! In this guide, we'll explore th
 
 You can find the full flow file [here][flows/build_a_rag.json], ready to upload.
 
+To get started, we need to visit the [Kalavai Platform](https://platform.kalavai.net/) where new users can sign up, or existing users can log in.
+
+__TODO__ How to deploy the Agent Builder
+
 ## What is a Flow?
 
 A flow is an end-to-end AI-driven pipeline that integrates multiple components to achieve a complex, standalone behavior, such as question answering, entity extraction, conversational chat, and tool use.
