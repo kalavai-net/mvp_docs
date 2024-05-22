@@ -52,7 +52,7 @@ While there are many parts to the pipeline, the Kalavai Platform UI makes it eas
 
 ### The Retrieval QA Chain
 
-![Add the retrieval QA component](images/rag/1.png)
+![Add the retrieval QA component](images/rag/1_clip.png)
 
 The first component we will add is the __Retrieval QA Chain__. This chain orchestrates all of the Retrieval and LLM Components required to get your Flow working. You can find it under __Chains > RetrievalQA__.
 
@@ -62,7 +62,7 @@ We will focus on the __Combine Documents Chain__ pin and the __Retriever__ pin, 
 
 ### Adding the Vector Store Retriever
 
-![Add the vector store](images/rag/2.png)
+![Add the vector store](images/rag/2_clip.png)
 
 We will use a Vector Store Retriever, which uses a Vector Database as our core document representation location. Add a new __Vector Store Retriever__ from the __Retrievers > VectorStore Retriever__ menu item.
 
@@ -70,7 +70,7 @@ The __VectorStore Retriever__ has no parameters and manages how to retrieve docu
 
 ### Adding the Vector Store
 
-![Add the vector store retriever](images/rag/3.png)
+![Add the vector store retriever](images/rag/3_clip.png)
 
 The vector store is the underlying storage for our vectors, which will encode the data we put into the system. Add a new __Kalavai Vector DB__ component using the __Vector Stores > Kalavai VectorDB__ menu item and connect it to the __Vector Store__ pin on the __VectorStore Retriever__.
 
@@ -89,7 +89,7 @@ We can use the __Kalavai Embeddings__ component to do the data indexing for us a
 
 ### Adding the Embeddings Model
 
-![Add the Embeddings Components](images/rag/4.png)
+![Add the Embeddings Components](images/rag/4_clip.png)
 
 Kalavai provides free and performant Embeddings Components, hosted on the distributed Kalavai Network, to index your documents and encode your queries. Embeddings models are the core magic of a RAG system.
 
@@ -105,7 +105,7 @@ Let's head over to the Documents pin on the Kalavai DB and start populating our 
 
 ### Splitting up your documents
 
-![Add the Documents](images/rag/5.png)
+![Add the Documents](images/rag/5_clip.png)
 
 When you supply documents to your rag, as soon as you get to longer and longer documents, you're going to want to split your documents up into smaller, managable chunks. To do this we add a __Character Text Splitter__
 
@@ -118,7 +118,7 @@ The only pin to this component, is to finally attach the _documents_ of your cho
 
 ### Adding Some Custom Documents to Your Flow
 
-![Add the Documents](images/rag/6.png)
+![Add the Documents](images/rag/6_clip.png)
 
 There are many ways to add data to your RAG Pipeline, such as indexing text files, PDFs, directories, websites, databases, and more. You can find an exhaustive list under the __Loaders__ menu.
 
@@ -132,11 +132,13 @@ You can also use the __PyPDF Loader__ for a similar approach using PDFs, or the 
 
 With a single document added, we have built the full retriever side of the flow.
 
+![Add the Documents](images/rag/6.png)
+
 That completes the Retriever Chain. We now have some data, a Kalavai-hosted embeddings model, and a Kalavai-hosted vector database, all leading into the __Retriever QA Chain__. Now we need to go back to the __Retriever QA Chain__ and fill out the remaining required pin, the _Combine Documents Chain_ pin.
 
 ### Add the Combine Documents Chain
 
-![Add the Document Chain](images/rag/add_docs_chain.png)
+![Add the Document Chain](images/rag/7_clip.png)
 
 The Combine Documents Chain determines how we can combine all of the results from the retriever to fit them into the context window of our Large Language Model (LLM).
 
@@ -148,7 +150,7 @@ We also have a single, last pin for the _LLM_, which will do the heavy lifting o
 
 ### Add the Kalavai LLM
 
-![Add the LLM](images/rag/add_llm.png)
+![Add the LLM](images/rag/8_clip.png)
 
 The LLM is the engine of the Question Answering system, synthesizing all of the documents found by the retriever into a single, cohesive answer.
 
