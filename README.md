@@ -159,17 +159,17 @@ The only pin to this component, is to finally attach the _documents_ of your cho
 
 ### Adding Some Custom Documents to Your Flow
 
-![Add the Documents](images/rag/6_clip.png)
+![Add the Documents](images/rag/pdf_clip.png)
 
 There are many ways to add data to your RAG Pipeline, such as indexing text files, PDFs, directories, websites, databases, and more. You can find an exhaustive list under the __Loaders__ menu.
 
-For this demo, while we are testing the end-to-end process, let's use a single Markdown Document, this tutorial, that we can upload directly into the component. Add an __Unstructured Markdown Loader__ from the __Loaders > UnstructuredMarkdownLoader__ menu item.
+For this demo, while we are testing the end-to-end process, let's use a single PDF document, that we can upload directly into the component. Add an __PyPDF Loader__ from the __Loaders > PyPDFLoader__ menu item.
 
 Here you can see the main parameter __File Path__ where you can click to add a new .md file.
 
 We can safely ignore the MetaData fields for now, which could be used in more complicated RAG setups to do filtered searches.
 
-You can also use the __PyPDF Loader__ for a similar approach using PDFs, or the __Text Loader__ component for pure txt files.
+You can also use the __Text Loader__ component for pure txt files.
 
 With a single document added, we have built the full retriever side of the flow.
 
@@ -217,7 +217,7 @@ You should see a "Flow is ready to run" message on completion!
 
 Now, clicking on the blue chat icon, you can go ahead and test out your first Flow on the Kalavai Network.
 
-![Compile](images/rag/chat.png)
+![Compile](images/rag/chat2.png)
 
 ## Deploy Your Flow to Kalavai
 
