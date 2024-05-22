@@ -2,9 +2,13 @@
 
 Welcome to the Kalavai Flow Deployment tutorial! In this guide, we'll explore the Kalavai AI no-code environment. Using freely available Kalavai AI components, including LLMs, Embeddings Models, and Vector Stores, we'll build and deploy a complex AI-enabled flow, __hosted and deployed for free on the Kalavai Network__.
 
+To get started, we need to visit the [Kalavai Platform](https://platform.kalavai.net/) where new users can sign up, or existing users can log in.
+
 If you want to jump into a fully commisioned RAG system, you can find the full flow file [here][example_flows/], ready to import to a fresh flow, or the whole [collection](example_collection) which you can upload to the main Agent Builder UI, using the Upload Collection button.
 
-To get started, we need to visit the [Kalavai Platform](https://platform.kalavai.net/) where new users can sign up, or existing users can log in.
+__NOTE__: You will need to upload you're own documents into the UsntructuredMarkdownLoader to compile, after uploading the flows.
+
+Keep reading, and we'll go step by step into how to build your RAG system.
 
 ## Deploying the Kalavai Agent Builder
 
