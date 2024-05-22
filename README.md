@@ -6,7 +6,40 @@ You can find the full flow file [here][flows/build_a_rag.json], ready to upload.
 
 To get started, we need to visit the [Kalavai Platform](https://platform.kalavai.net/) where new users can sign up, or existing users can log in.
 
-__TODO__ How to deploy the Agent Builder
+## Deploying the Kalavai Agent Builder
+
+The Kalavai Agent Builder is one of several services you can host on the Kalavai network, and use to build AI empowered agents, which you can further deploy on the Network.
+
+Here're we'll quickly go through the steps to use the Agent Builder.
+
+1. Log into the [Kalavai Platform](https://platform.kalavai.net/) or sign up for a new account.
+
+![Open Kalavai Platform](images/agent_builder/ab_1.png)
+
+
+2. Create a new Agent Builder Instance
+![Open Kalavai Platform](images/agent_builder/ab_2.png)
+
+Clicking on __Agent Builder__ in the navigaton, we can open up the Agent Builder deployment page. The Agent Builder will require its own Password, so that you can securely log into the deployment, remember these for later, if it is not the same as your Kalavai Password.
+
+Clicking deploy will begin the deployment process, this may take serveral minuites, and require a manual refresh using the Refresh Button.
+
+3. Deploy the Agent Builder
+![Open Kalavai Platform](images/agent_builder/ab_3.png)
+
+
+When the agent is deployed, as you press refresh you will be presented with a new Langflow instance
+
+4. Log into Langflow
+![Open Kalavai Platform](images/agent_builder/ab_4.png)
+
+This is where you can use the password and username that you created at step 3, to log in. Your username will be prompted in the green box to help you remember.
+
+5. Start Building
+![Open Kalavai Platform](images/agent_builder/ab_5.png)
+
+From here you can upload our collection of flows, or get started, by following "Start Here" and follow to Rag Build Tutorial below!
+
 
 ## What is a Flow?
 
