@@ -14,7 +14,7 @@ Keep reading, and we'll go step by step into how to build your RAG system.
 
 The Kalavai Agent Builder is one of several services you can host on the Kalavai network, and use to build AI empowered agents, which you can further deploy on the Network.
 
-Here're we'll quickly go through the steps to use the Agent Builder.
+Here we'll quickly go through the steps to use the Agent Builder.
 
 1. Log into the [Kalavai Platform](https://platform.kalavai.net/) or sign up for a new account.
 
